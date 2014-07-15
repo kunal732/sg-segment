@@ -40,7 +40,7 @@ def getLocation(ip):
 def index():
    return "OK"
 
-@app.route('/segment', methods = ['POST'])
+@app.route('/', methods = ['POST'])
 def segList():
    json = request.json
    for event in json:
